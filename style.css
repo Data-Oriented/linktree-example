@@ -337,7 +337,8 @@ a{
     font-size: 10px;
     }
 }
-ul {
-    padding-inline-start: 0; /* Removes the padding */
-    list-style-position: inside; /* Optional: adjust bullet points if needed */
+ul, menu {
+    padding-inline-start: 0; /* Remove the default padding */
+    margin: 0; /* Optionally reset margin as well */
+    list-style-position: inside; /* Optional: adjusts bullet points inside */
 }
