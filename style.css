@@ -339,4 +339,5 @@ a{
 }
 ul {
     padding-inline-start: 0; /* Removes the padding */
+    list-style-position: inside; /* Optional: adjust bullet points if needed */
 }
