@@ -4,78 +4,98 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linktree Project - Mohamed Afilal</title>
+    <script src="https://kit.fontawesome.com/6614ddd371.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+
     <header>
-      <h1 id="main">Welcome to My Profile!</h1>
+      <nav class="menu">
+        <ul class="mainmenu">
+          <a class="button" id="menuButton" href="#">About Me</a>
+          <a class="button" id="menuButton" href="#skills">Skills</a>
+          <a class="button" id="menuButton"  href="#portfolio">Portfolio</a>
+          <a class="button" id="menuButton" href="#contact">Contact</a>
+        </ul>
+        <ul class="mainmenu">
+          <a class="button" id="linkedIn" href="https://www.linkedin.com/in/mohamed-afilal-b4481517/"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a class="button" id="facebook" href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a class="button" id="github" href="https://github.com/Data-Oriented"><i class="fa-brands fa-square-github"></i></a>
+          <a class="button" id="gmail" href="mailto:mafilal@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+        </ul>
+      </nav>
+      <h1 id="main">Welcome to My Portfolio Page</h1>
     </header>
 
     <main>
-      <section ="profile">
+      <section id="profile">
         <img src="photo.jpeg" alt="Mohamed Afilal's Profile Image" class="profile-img" />
 
         <div class="block" id="bk">
           <h2 id="profile">Mohamed Afilal</h2>
-          <p id="bk">Tech Enthusiast | Full Stack Developer | Innovator</p>
-          <p id="bk"><b>Bio: </b>I am a tech enthusiast and Full Stack Developer with a strong background in business and technology integration. As the founder of Tetra Inspection, I built and maintained the company’s website and online presence using modern web development and digital marketing techniques. My experience extends across managing scalable IT solutions, leveraging tools such as HubSpot CRM, Zoho Creator, and AirTable to enhance operational efficiency. Passionate about creating seamless user experiences and driving innovation, I bring a blend of technical skills and business acumen to every project. </p>
+          <p>Tech Enthusiast | Full Stack Developer | Innovator</p>
+          <p><b>Bio:</b> I am a tech enthusiast and Full Stack Developer with a strong background in business and technology integration. As the founder of Tetra Inspection, I built and maintained the company’s website and online presence using modern web development and digital marketing techniques. My experience extends across managing scalable IT solutions, leveraging tools such as HubSpot CRM, Zoho Creator, and AirTable to enhance operational efficiency. Passionate about creating seamless user experiences and driving innovation, I bring a blend of technical skills and business acumen to every project.</p>
         </div>
       </section>
 
-      <section>
-        <div class="block">
+      <section class="skillsSection">
+        <div class="block" id="block1">
           <h3 class="label" id="portfolio">Portfolio</h3>
           <p>Check out my latest projects and work in web development, including front-end and back-end solutions.</p>
           <a class="button" href="https://tetrainspection.com" target="_blank" rel="noopener noreferrer">Company</a>
         </div>
 
-        <div class="block">
-          <h3 class="label" id="github">GitHub</h3>
+        <div class="block" id="block2">
+          <h3 class="label">GitHub</h3>
           <p>Explore my repositories, including my contributions to open-source projects and personal code experiments.</p>
           <a class="button" href="https://github.com/Data-Oriented" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
 
-        <div class="block">
+        <div class="block" id="block3">
           <h3 class="label" id="linkedin">LinkedIn</h3>
           <p>Connect with me for professional networking, collaborations, and opportunities in the tech industry.</p>
           <a class="button" href="https://www.linkedin.com/in/mohamed-afilal-b4481517/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </section>
 
-      <section>
-        <table class="table">
-          <div class="label" id="work">Previous Work</div>
+     <div class="tableContainer">
+        <table class="table" id="portfolio">
+          <h3 class="label">PREVIOUS WORK</h3>
           <thead>
-            <tr class="table">
+            <tr>
               <th>Projects</th>
               <th>Skills</th>
               <th>Example Website</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="table">
+            <tr>
               <td>Form Page</td>
               <td>HTML</td>
-              <td><a href="Form.html" target="_blank">Form Page</a></td>
+              <td><a class="button" id="formButton" href="Form.html" target="_blank">Form Page</a></td>
             </tr>
-            <tr class="table">
+            <tr>
               <td>LinkTree Page</td>
               <td>HTML, CSS</td>
-              <td><a href="#" target="_blank">LinkTree Page</a></td>
+              <td><a class="button" id="formButton" href="#" target="_blank">LinkTree Page</a></td>
             </tr>
-            <tr class="table">
+            <tr>
               <td>Calculator</td>
               <td>HTML, CSS, JavaScript</td>
-              <td><a href="Calculator.html" target="_blank">Calculator</a></td>
+              <td><a class="button" id="formButton" href="Calculator.html" target="_blank">Calculator</a></td>
             </tr>
           </tbody>
         </table>
-      </section>
+     
+      </div>
 
-      <section ="contact">
-        <h3 class="label" id="contact">Contact Me</h3>
+      <section id="contact">
+       
 
         <form action="/submit" method="POST">
+          <h3 class="label" id="contact">Contact Me</h3>
+
           <div class="group">
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" required />
@@ -96,9 +116,11 @@
             <textarea name="message" id="message" rows="4" placeholder="Your message here..." required></textarea>
           </div>
 
-          <button type="submit" class="button">Send</button>
+          <button type="submit" class="button" id="send">Send</button>
         </form>
       </section>
     </main>
   </body>
+  <script src="main.js"></script>
+
 </html>
