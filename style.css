@@ -337,3 +337,6 @@ a{
     font-size: 10px;
     }
 }
+ul {
+    padding-inline-start: 0; /* Removes the padding */
+}
