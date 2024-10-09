@@ -14,8 +14,8 @@
       <nav class="menu">
         <ul class="mainmenu">
           <a class="button" id="menuButton" href="#">About Me</a>
-          <a class="button" id="menuButton" href="#skills">Skills</a>
           <a class="button" id="menuButton"  href="#portfolio">Portfolio</a>
+          <a class="button" id="menuButton" href="#skills">Skills</a>
           <a class="button" id="menuButton" href="#contact">Contact</a>
         </ul>
         <ul class="mainmenu">
@@ -57,7 +57,49 @@
           <p>Connect with me for professional networking, collaborations, and opportunities in the tech industry.</p>
           <a class="button" href="https://www.linkedin.com/in/mohamed-afilal-b4481517/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
+        
       </section>
+
+      <h3 class="label" id="skills">Animated Skills Bar</h3>
+
+      <div class="blockSkill">
+
+   <div class="container">
+       <div class="skill-box">
+           <span class="title">HTML</span>
+           <div class="skill-bar">
+               <span class="skill-per html">
+                   <span class="tooltip">90%</span>
+               </span>
+           </div>
+       </div>
+       <div class="skill-box">
+           <span class="title">CSS</span>
+           <div class="skill-bar">
+               <span class="skill-per css">
+                   <span class="tooltip">70%</span>
+               </span>
+           </div>
+       </div>
+       <div class="skill-box">
+           <span class="title">JavaScript</span>
+           <div class="skill-bar">
+               <span class="skill-per javascript">
+                   <span class="tooltip">50%</span>
+               </span>
+           </div>
+       </div>
+       <div class="skill-box">
+           <span class="title">NodeJS</span>
+           <div class="skill-bar">
+               <span class="skill-per nodejs">
+                   <span class="tooltip">30%</span>
+               </span>
+           </div>
+       </div>
+   </div>
+
+  </div>
 
      <div class="tableContainer">
         <table class="table" id="portfolio">
@@ -116,11 +158,22 @@
             <textarea name="message" id="message" rows="4" placeholder="Your message here..." required></textarea>
           </div>
 
+          <div id="plusButton">
+            <button type="submit" class="skillsRequired" id="plusBtn"><p> + </p> </button> <label for="text">Click to add your requirements</label>
+
+          </div>
+
           <button type="submit" class="button" id="send">Send</button>
+
+          <div id="here"></div>
+
         </form>
       </section>
     </main>
   </body>
   <script src="main.js"></script>
+   
+</body>
+</html>
 
 </html>
