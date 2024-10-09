@@ -12,7 +12,18 @@ document.getElementById("send").addEventListener("click", function(event) {
     console.log("Message:", message);
     alert("Your form has been submitted!");
     location.reload();
-
-
+    event.preventDefault();
 });
 
+document.getElementById("plusBtn").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default button behavior
+
+    for (let i = 0; i < 3; i++) {
+        let newRequirement = document.createElement("div"); // Create a div element
+        newRequirement.classList.add("group"); // Add the class "group" to the div
+
+        document.getElementById("here").appendChild(newRequirement); // Append the new div to the "here" element
+    }
+
+    // Remove location.reload(); to avoid automatic page reload
+});
