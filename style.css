@@ -337,10 +337,10 @@ a{
 
 @media screen and (max-width: 480px) {
     .block {
-        max-width: 50%;
+        max-width: 100%;
     }
     .label {
-        width: 50%;
+        width: 100%;
     }
     #main {
         font-size: 2rem;
