@@ -49,11 +49,11 @@ img.profile-img:hover {
 /* Main header styling */
 #main {
     font-size: 2em;
-    margin-top: 40px;
     font-weight: 600;
     color: #007BFF;
     text-align: center;
     padding: 20px;
+    margin-top: 5%;
     background-color: #f0f4f8;
 }
 
@@ -106,8 +106,7 @@ section {
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
-    padding: 40px;
+    padding: 20px;
 }
 
 /* Group styling */
@@ -153,7 +152,7 @@ section {
 /* Label styling */
 .label {
 
-    font-size: 18px;
+    font-size: 22px;
    
         color: #007BFF;
         background-color: #ffffff00;
@@ -162,6 +161,7 @@ section {
    
     padding-bottom: 10px;
     padding-top: 10px;
+    margin-top: 40px;
     width: 100%;    
     border-radius: 50px;
     margin-bottom: 10px;
@@ -253,16 +253,15 @@ form button:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+   
     
 }
 
 .menu{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items:center;
+    justify-content:space-around;
     flex-wrap: wrap;
-   
     width: 100%;
     color: white;
     border: none;
@@ -381,7 +380,7 @@ justify-self: center;
 }
 
 
-===== Google Font Import - Poppins =====
+/* ===== Google Font Import - Poppins ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 *{
     margin: 0;
@@ -433,16 +432,19 @@ justify-self: center;
     opacity: 0;
 }
 .skill-per.css{
-    width: 70%;
+    width: 80%;
     animation-delay: 0.1s;
+    background: #F4B400;
 }
 .skill-per.javascript{
-    width: 50%;
+    width: 65%;
     animation-delay: 0.2s;
+    background: #DD4B39;
 }
 .skill-per.nodejs{
     width: 30%;
     animation-delay: 0.3s;
+    background:#215732;
 }
 @keyframes progress {
     0%{
@@ -475,4 +477,10 @@ justify-self: center;
     z-index: -1;
     background-color: #4070f4;
     transform: translateX(-50%) rotate(45deg);
+}
+
+#skillsButton {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
 }
